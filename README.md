@@ -1,4 +1,4 @@
-## Hrnet语义分割模型在keras当中的实现
+## Hrnet语义分割模型在tensorflow2当中的实现
 ---
 
 ### 目录
@@ -18,25 +18,24 @@
 ## 相关仓库
 | 模型 | 路径 |
 | :----- | :----- |
-Unet | https://github.com/bubbliiiing/unet-keras  
-PSPnet | https://github.com/bubbliiiing/pspnet-keras
-deeplabv3+ | https://github.com/bubbliiiing/deeplabv3-plus-keras
-hrnet | https://github.com/bubbliiiing/hrnet-keras
+Unet | https://github.com/bubbliiiing/unet-tf2  
+PSPnet | https://github.com/bubbliiiing/pspnet-tf2
+deeplabv3+ | https://github.com/bubbliiiing/deeplabv3-plus-tf2
+hrnet | https://github.com/bubbliiiing/hrnet-tf2
 
 ### 性能情况
 | 训练数据集 | 权值文件名称 | 测试数据集 | 输入图片大小 | mIOU | 
 | :-----: | :-----: | :------: | :------: | :------: | 
-| VOC12+SBD | [hrnetv2_w18_weights_voc.h5](https://github.com/bubbliiiing/hrnet-keras/releases/download/v1.0/hrnetv2_w18_weights_voc.h5) | VOC-Val12 | 480x480 | 72.53 | 
-| VOC12+SBD | [hrnetv2_w32_weights_voc.h5](https://github.com/bubbliiiing/hrnet-keras/releases/download/v1.0/hrnetv2_w32_weights_voc.h5) | VOC-Val12 | 480x480 | 74.56 | 
+| VOC12+SBD | [hrnetv2_w18_weights_voc.h5](https://github.com/bubbliiiing/hrnet-tf2/releases/download/v1.0/hrnetv2_w18_weights_voc.h5) | VOC-Val12 | 480x480 | 72.53 | 
+| VOC12+SBD | [hrnetv2_w32_weights_voc.h5](https://github.com/bubbliiiing/hrnet-tf2/releases/download/v1.0/hrnetv2_w32_weights_voc.h5) | VOC-Val12 | 480x480 | 74.56 | 
 
 ### 所需环境
-tensorflow==1.13.2    
-keras==2.1.5
+tensorflow==2.2.0  
 
 ### 文件下载
 训练所需的权值可在百度网盘中下载。     
-链接: https://pan.baidu.com/s/1T0vQ6uVYgB60MT9eKNL2Kw    
-提取码: fexe     
+链接: https://pan.baidu.com/s/1Gv0RqVXIIKxY5bThvq9JXA        
+提取码: ee78      
 
 VOC拓展数据集的百度网盘如下：   
 链接: https://pan.baidu.com/s/1vkk3lMheUm6IjTXznlg7Ng    
