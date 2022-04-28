@@ -64,8 +64,6 @@ def fit_one_epoch(net, loss, loss_history, optimizer, epoch, epoch_step, epoch_s
             if iteration >= epoch_step:
                 break
             images, labels = batch[0], batch[1]
-            labels = tf.cast(tf.convert_to_tensor(labels), tf.float32)
-
             loss_value, _f_score = train_step(images, labels, net, optimizer, loss, metrics)
             total_loss      += loss_value.numpy()
             total_f_score   += _f_score.numpy()
@@ -82,8 +80,6 @@ def fit_one_epoch(net, loss, loss_history, optimizer, epoch, epoch_step, epoch_s
             if iteration >= epoch_step_val:
                 break
             images, labels = batch[0], batch[1]
-            labels = tf.cast(tf.convert_to_tensor(labels), tf.float32)
-
             loss_value, _f_score = val_step(images, labels, net, optimizer, loss, metrics)
             val_loss    += loss_value.numpy()
             val_f_score += _f_score.numpy()
